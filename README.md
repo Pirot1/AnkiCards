@@ -13,6 +13,7 @@
   - [📋 Table of Contents](#-table-of-contents)
   - [✨ Features](#-features)
   - [🛠 Tech Stack](#-tech-stack)
+  - [📂 Project Structure](#-project-structure)
   - [📦 Quick Start](#-quick-start)
     - [Dependencies](#dependencies)
     - [Installation](#installation)
@@ -37,6 +38,25 @@
 | **Translation** | [Argos Translate](https://github.com/argosopentech/argos-translate) |
 | **GUI** | PyQt (Anki API) |
 
+---
+
+## 📂 Project Structure
+
+```text
+anki_auto/
+├── assets/             # Icons and static resources
+├── core/               # Business logic
+│   ├── __init__.py     # Initialisation of package
+│   ├── anki_api.py     # Communication with Anki database
+│   ├── ocr_engine.py   # EasyOCR implementation
+│   └── translator.py   # Argos Translate logic
+├── ui/                 # User Interface
+│   ├── __init__.py     # Initialisation of package
+│   └── interface.py    # PyQt/Anki UI code
+├── config.py           # Global settings and constants
+├── main.py             # Application entry point
+└── .gitignore          # Files to exclude from Git
+```
 ---
 
 ## 📦 Quick Start
