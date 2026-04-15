@@ -1,8 +1,15 @@
 import argostranslate.package
 import argostranslate.translate
 
-from_code = "fi"
-to_code = "en"
+import sys
+import os
+from pathlib import Path
+root_dir = Path(__file__).resolve().parent.parent
+sys.path.append(str(root_dir))
+import anki_auto.config as config
+
+from_code = config.SOURCE_LANG
+to_code = config.TARGET_LANG
 
 # Download and install Argos Translate package
 def fin_en_translator(text: str) -> str:
