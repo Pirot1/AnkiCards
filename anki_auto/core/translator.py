@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 root_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(root_dir))
-import anki_auto.config as config
+import config
 
 from_code = config.SOURCE_LANG
 to_code = config.TARGET_LANG
