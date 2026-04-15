@@ -21,3 +21,5 @@ TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 # Translation Settings
 SOURCE_LANG = "fi"
 TARGET_LANG = "en"
+# Flags
+DOUBLE_CHECK = True
