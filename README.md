@@ -79,8 +79,8 @@ anki_auto/
 
 ```Bash
 cd C:\Users\YourName\Desktop\Projects\AnkiProject\AnkiCards
-Prepare Asset: Place your image file (e.g., finnish_words.png) into the assets/ directory.
 ```
+Prepare Asset: Place your image file (e.g., finnish_words.png) into the assets/ directory.
 3. **Run Script:** Execute the main application:
 ```Bash
 python anki_auto\main.py
