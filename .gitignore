@@ -8,6 +8,11 @@
 *.so
 *.dylib
 
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # Code coverage profiles and other test artifacts
 *.out
