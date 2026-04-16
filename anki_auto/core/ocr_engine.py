@@ -31,10 +31,12 @@ class OCRReader:
         return result
 
     def read_text(self, name):
-        image_path = str(config.ASSETS_DIR / name)
-        # Skip processing and send the file path directly to Tesseract
-        # Tesseract will handle the image internally
-        raw_text = pytesseract.image_to_string(image_path, self.lang)
+        image_path = config.ASSETS_DIR / name
+        if not image_path.exists():
+            print(f"Error: File not found at {image_path}")
+            return []
+        img = Image.open(image_path)
+        raw_text = pytesseract.image_to_string(img, lang=self.lang,config='--psm 6')
         return self.filter_text(raw_text)
 
 
