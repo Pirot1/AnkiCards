@@ -32,5 +32,5 @@ venv/
 assets/
 *.argosmodel
 # Editor/IDE
-# .idea/
-# .vscode/
+.idea/
+.vscode/
